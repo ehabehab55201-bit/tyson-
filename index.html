@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuson Wash</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:Arial,sans-serif;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(rgba(8,21,34,.72), rgba(8,21,34,.72)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color:#fff;
+      text-align:center;
+      padding:24px;
+    }
+
+
+    .card{
+      width:min(480px,100%);
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:24px;
+      padding:36px 28px;
+      box-shadow:0 18px 50px rgba(0,0,0,.25);
+      animation:fadeUp .7s ease;
+    }
+
+    .logo{
+      width:90px;
+      height:90px;
+      border-radius:50%;
+      overflow:hidden;
+      margin:0 auto 18px;
+      border:3px solid rgba(255,255,255,.25);
+      background:#ffffff;
+    }
+
+    .logo img{width:100%;height:100%;object-fit:cover}
+
+    h1{font-size:34px;margin-bottom:8px}
+    p{color:#e4ebf2;margin-bottom:26px;font-size:16px}
+
+    .actions{
+      display:grid;
+      gap:14px;
+    }
+
+    .btn{
+      display:block;
+      text-decoration:none;
+      color:#000000;
+      background:#86d4bd;
+      padding:15px 18px;
+      border-radius:14px;
+      font-weight:700;
+      transition:.25s;
+    }
+
+    .btn:hover{transform:translateY(-2px)}
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(24px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">
+      <img src="logo.jpeg" alt="Tuson Wash">
+    </div>
+
+    <h1>Tyson Wash</h1>
+    <p>اختار المكان اللي تحب تتواصل منه</p>
+
+    <div class="actions">
+      <a class="btn" href="https://www.facebook.com/share/17T67UgBTo/" target="_blank">فيسبوك 📞</a>
+      <a class="btn" href="https://wa.me/201159363646" target="_blank">واتساب 💬</a>
+      <a class="btn" href="https://maps.app.goo.gl/NWSQZGczAHURDofH8?g_st=aw" target="_blank">الموقع 🌐</a>
+    </div>
+  </div>
+
+</body>
+</html>
